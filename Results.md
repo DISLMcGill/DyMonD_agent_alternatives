@@ -16,25 +16,25 @@ The API can be built in two ways: linked to a project or as a standalone program
 In conclusion, the Tensorflow C and C++ APIs were more effective at handling a larger batch of inputs (especially the C API), and could be pursued as solutions to increase the efficiency of the sniffer. Although the C API was a lot faster with a larger input batch, the C++ API had a faster individual prediction time, and is written in C++. The Tensorflow C++ API seems to be the better solution, given the format of DyMonD, which processes small batches of inputs at a time. Both methods also had higher accuracies than both the initial python model and Keras2C. The Keras2C method, however, had the fastest time for an individual prediction; if the process could be made more efficient, this could be a viable solution as well. 
 
 Figure 1: Results
-                      Keras2C  | Python .h5 Model | Tensorflow C API | Tensorflow C++ API
---------------------------------------------------------------------------------------------           
+                    | Keras2C  | Python .h5 Model | Tensorflow C API | Tensorflow C++ API
+--------------------|----------|------------------|------------------|----------------------           
 F1 Score            | 0.982    | 0.981            | 0.997            | 0.997
---------------------------------------------------------------------------------------------   
+--------------------|----------|------------------|------------------|----------------------   
 Accuracy            | 0.996    | 0.982            | 0.999            | 0.999
---------------------------------------------------------------------------------------------   
+--------------------|----------|------------------|------------------|----------------------   
 Recall              | 0.982    | 0.981            | 0.997            | 0.997
---------------------------------------------------------------------------------------------   
+--------------------|----------|------------------|------------------|----------------------   
 Precision           | 0.982    | 0.981            | 0.997            | 0.997
---------------------------------------------------------------------------------------------   
+--------------------|----------|------------------|------------------|----------------------   
 Average time        |5.43e-03s | 9.94e-03s        | 7.01e03s         | 6.61e-03s
 per test            |          |                  |                  |
 (5643 total)        |          |                  |                  |
---------------------------------------------------------------------------------------------  
+--------------------|----------|------------------|------------------|----------------------  
 Average time        | 29.89s   | 7.19s            | 0.462s           | 11.5s
 for process w/5643  |          |                  |                  |
 tests (loading data |          |                  |                  |
 ->prediction output)|          |                  |                  |
---------------------------------------------------------------------------------------------  
+--------------------|----------|------------------|------------------|----------------------  
 
 
 
