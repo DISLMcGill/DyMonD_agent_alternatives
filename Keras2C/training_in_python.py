@@ -132,7 +132,7 @@ for r in range(5):
  #print(model(xt))
  #model.save("/the_model_" + str(r), save_format='tf')
  #loaded_model = tf.keras.models.load_model('/the_model_'+str(r))
- model.save('model.h5')
+ model.save('CNNmodelh1.h5')
 
 m, s = mean(scores), std(scores)
 print('Accuracy: %.3f%% (+/-%.3f)' % (m, s))
