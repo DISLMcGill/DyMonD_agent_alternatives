@@ -29,7 +29,7 @@ Precision            |  0.982     |  0.981             |  0.997             |  0
 Average time         | 5.43e-03s  |   9.94e-03s        |  7.01e03s          | 6.61e-03s
 per test             |            |                    |                    |
 (5643 total)         |            |                    |                    |
-                     |            |                    |                    |  
+-------------------- |            |                    |                    |  
 Average time         | 29.89s     |  7.19s             |  0.462s            |  11.5s
 for process w/5643   |            |                    |                    |
 tests (loading data  |            |                    |                    |
