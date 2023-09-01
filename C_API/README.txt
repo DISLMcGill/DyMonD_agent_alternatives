@@ -4,7 +4,9 @@ Training:
 
 Run Data/training_in_python.py to obtain 5 .pb extention models. Select the model with the f1 score closest to the average of the 5 models.
 
-Note: this process takes multiple hours, and is faster if run on google colab with the GPU setting.  
+Notes: 
+  1) this process takes multiple hours, and is faster if run on google colab with the GPU setting.  
+  2) this process requires two scripts (also required by later steps: TestNoSLCor.csv and TrainNoSLCor.csv, these are too long to add here but a zip file with them both is in the main folder.
 
 Note on Model format:
 
