@@ -118,7 +118,7 @@ for r in range(5):
  #print(model(xt))
  #model.save("the_model_" + str(r), save_format='tf')
  #loaded_model = tf.keras.models.load_model('the_model_'+str(r))
- model.save('Models/model_0')
+ #model.save('Models/model_0')
 
 
  print(le_name_mapping)
@@ -129,10 +129,10 @@ for r in range(5):
  RWeightedAverages.append(precision_recall_fscore_support(rounded_label, yhat_classes, average='weighted')[1])
  F1WeightedAverages.append(precision_recall_fscore_support(rounded_label, yhat_classes, average='weighted')[2])
 
- print(model(xt))
- model.save("/the_model_" + str(r), save_format='tf')
- loaded_model = tf.keras.models.load_model('/the_model_'+str(r))
-
+ #print(model(xt))
+ #model.save("/the_model_" + str(r), save_format='tf')
+ #loaded_model = tf.keras.models.load_model('/the_model_'+str(r))
+ model.save('model.h5')
 
 m, s = mean(scores), std(scores)
 print('Accuracy: %.3f%% (+/-%.3f)' % (m, s))
