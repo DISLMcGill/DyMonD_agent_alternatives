@@ -17,13 +17,13 @@ Most versions of tensorflow 2.xx can be used if 2.13 not preferred.
 
 2) In c_api.c, replace "Models/model_0" with the path to the folder containing whichever model you wish to use.
 
-3) Run : gcc -I<path to libtensorflow/include> -L<path to libtensorflow/lib> file6.c -ltensorflow -o main.out
+3) Run : gcc -I<path to libtensorflow/include> -L<path to libtensorflow/lib> c_api.c -ltensorflow -o main.out
   
-  ex: gcc -I../libtensorflow/include/ -L../libtensorflow/lib file6.c -ltensorflow -o <choose name of executable>
-  -> file6.c contains the code to process the model, generate and output predictions
+  ex: gcc -I../libtensorflow/include/ -L../libtensorflow/lib c_api.c -ltensorflow -o <choose name of executable>
+  -> c_api.c contains the code to process the model, generate and output predictions
 
 4) Run ./<name of executable>
-This should result in a file called ten_classes_0_results.csv (or whatever you change it to -> change this in file6.c).
+This should result in a file called ten_classes_0_results.csv (or whatever you change it to -> change this in c_api.c).
 
 5) Run python3 process_results.py for performance metrics (will need to alter name of ten_classes_0_results.csv in this file if a different name was used.
 
