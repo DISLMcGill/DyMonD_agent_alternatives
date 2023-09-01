@@ -23,14 +23,15 @@ Free disk space (optional)
 Running the program:
 1) copy example.cpp into tensorflow_cc/tensorflow_cc
 2) copy CMakeLists.txt into tensorflow_cc/tensorflow_cc
+   - change the location of protobuf in CMakeLists.txt to match where it is installed
 3) Also copy in the directory with the saved model into tensorflow_cc/tensorflow_cc and tensorflow_cc/tensorflow_cc/build, and the file test_no_labels.csv in data.zip
-3) in the tensorflow_cc/tensorflow_cc/build directory, run
+4) in the tensorflow_cc/tensorflow_cc/build directory, run
         i) cmake ..
         ii) make
         iii) ./example
 This will generate a file called output_predictions.txt.
 
-4) run python3 process_other_results.py to generate the performance metrics of the predictions generated
+5) run python3 process_other_results.py to generate the performance metrics of the predictions generated
 
 Notes:
 - This runs with tensorflow2.9.0
