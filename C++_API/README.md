@@ -1,6 +1,6 @@
 Training:
 
-Run training_in_python.py to obtain 5 .pb extention models. This script will also test each model, and generate performance metrics on the test data in TestNoSLCor.csv. The data the model is trained on is in TrainNoSLCor.csv: each line is a series of test data, and the corresponding correct prediction. Select the model with the f1 score closest to the average of the 5 models.
+Run C_API/training_pb.py to obtain 5 .pb extention models. This script will also test each model, and generate performance metrics on the test data in TestNoSLCor.csv. The data the model is trained on is in TrainNoSLCor.csv: each line is a series of test data, and the corresponding correct prediction. Select the model with the f1 score closest to the average of the 5 models.
 
 Note: this process takes multiple hours, and is faster if run on google colab with the GPU setting.
 
