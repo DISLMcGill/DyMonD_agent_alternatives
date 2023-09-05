@@ -2,7 +2,7 @@ C API:
 ----------------------------------------------------------------------------------
 Training:
 
-Run Data/training_in_python.py to obtain 5 .pb extention models. Select the model with the f1 score closest to the average of the 5 models.
+Run training_pb.py to obtain 5 .pb extention models. Select the model with the f1 score closest to the average of the 5 models.
 
 Notes: 
   1) this process takes multiple hours, and is faster if run on google colab with the GPU setting.  
