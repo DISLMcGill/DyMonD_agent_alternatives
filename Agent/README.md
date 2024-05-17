@@ -1,1 +1,1 @@
-In order to run this file with the Tensorflow C++ API, the file agent.cpp and CMakeLists.txt must be placed in the directory tensorflow_cc/tensorflow_cc.
+In order to run this file with the Tensorflow C++ API, the file agent.cpp and CMakeLists.txt must be placed in the directory tensorflow_cc/tensorflow_cc. These directories will be present when you build tensorflow for C++ with the tutorial used in the README.md file in the C++_API folder.
