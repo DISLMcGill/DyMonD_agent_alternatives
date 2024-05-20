@@ -1,3 +1,7 @@
+example.cpp : original file created for the DyMonD 10 classes model
+c++_api_general.c : can be used for the DyMonD 10 classes model, RNN and ResNet50V2 models
+
+
 Training:
 
 Run C_API/training_pb.py to obtain 5 .pb extention models. This script will also test each model, and generate performance metrics on the test data in TestNoSLCor.csv. The data the model is trained on is in TrainNoSLCor.csv: each line is a series of test data, and the corresponding correct prediction. Select the model with the f1 score closest to the average of the 5 models.
