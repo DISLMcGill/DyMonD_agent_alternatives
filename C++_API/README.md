@@ -1,6 +1,6 @@
-example.cpp : original file created for the DyMonD 10 classes model 
+**example.cpp **: original file created for the DyMonD 10 classes model 
 
-c++_api_general.c : can be used for the DyMonD 10 classes model, RNN and ResNet50V2 models
+**c++_api_general.c** : can be used for the DyMonD 10 classes model, RNN and ResNet50V2 models
 
 
 Training:
